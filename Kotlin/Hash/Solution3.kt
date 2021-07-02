@@ -1,5 +1,6 @@
 import java.util.HashMap
 import java.util.stream.Collectors
+import java.util.Arrays
 
 class Solution {
     fun solution(clothes: Array<Array<String>>): Int {
@@ -14,6 +15,11 @@ class Solution {
 }
 
 fun main(args: Array<String>){
-  var clothes:Array<Array<String>> = {{"yellowhat", "headgear"}, {"bluesunglasses", "eyewear"}, {"green_turban", "headgear"}}
-  println("$clothes")
+  var clothes:Array<Array<String>> = arrayOf(
+  	arrayOf("yellowhat", "headgear"),
+  	arrayOf("bluesunglasses", "eyewear"),
+    arrayOf("green_turban", "headgear")
+  )
+  val sol:Solution = Solution()
+  println(sol.solution(clothes))
 }
