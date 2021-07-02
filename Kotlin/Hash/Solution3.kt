@@ -14,5 +14,6 @@ class Solution {
 }
 
 fun main(args: Array<String>){
-  print(answer)
+  var clothes:Array<Array<String>> = {{"yellowhat", "headgear"}, {"bluesunglasses", "eyewear"}, {"green_turban", "headgear"}}
+  println("$clothes")
 }
