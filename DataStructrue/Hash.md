@@ -43,7 +43,7 @@ for element in array:
 ```
 c++  
 ```c++
-for (int i : nums) {
+for (auto num : nums) {
     unordered_map[i] = unordered_map[i] + 1;
 }
 ```
