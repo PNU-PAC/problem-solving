@@ -10,15 +10,15 @@ C++에서는 std namespace에서 unordered_map 헤더를 include하여 사용할
 ##### Key에 대한 Value 얻기
 - Java    : HashMap.get(Key)
 - Python  : Dictionary[Key]
-- C++     : hash_map.find(Key)
+- C++     : unordered_map.find(Key)
 ##### 데이터 삽입
 - Java    : HashMap.put(Key, Value)
 - Python  : Dictionary[Key] = Value
-- C++     : hash_map.insert(Key)
+- C++     : unordered_map.insert(Key)
 ##### 크기 구하기
 - Java    : HashMap.size()
 - Python  : len(Dictionary)
-- C++     : hash_map.size()
+- C++     : unordered_map.size()
 
 이 외에도 공통적으로 모든 키나 모든 값을 얻는 함수, 내부를 비우는 함수, 내부가 비었는지 확인하는 함수 등이 있다.  
 특히, Java의 .getOrDefault(key, default)나, Python의 .setDefault(key, defalut)와 같은 함수는  
@@ -39,12 +39,12 @@ for(element in array){
 python  
 ```python
 for element in array:
-  hashMap[element] = hashMap.setDefault(element, 1) + 1
+  Dictionary[element] = Dictionary.setDefault(element, 1) + 1
 ```
 c++  
 ```c++
 for (int i : nums) {
-    hash_table[i] = hash_table[i] + 1;
+    unordered_map[i] = unordered_map[i] + 1;
 }
 ```
 
