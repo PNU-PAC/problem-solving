@@ -27,19 +27,19 @@ C++에서는 std namespace에서 unordered_map 헤더를 include하여 사용할
 java  
 ```java
 for(String element:array){
-  hashMap.put(element, hashMap.getOrDefault(element, 1) + 1);
+  hashMap.put(element, hashMap.getOrDefault(element, 0) + 1);
 }
 ```
 kotlin  
 ```kotlin
 for(element in array){
-  hashMap.put(element, hashMap.getOrDefault(element, 1) + 1)
+  hashMap.put(element, hashMap.getOrDefault(element, 0) + 1)
 }
 ```  
 python  
 ```python
 for element in array:
-  Dictionary[element] = Dictionary.setDefault(element, 1) + 1
+  Dictionary[element] = Dictionary.setDefault(element, 0) + 1
 ```
 c++  
 ```c++
