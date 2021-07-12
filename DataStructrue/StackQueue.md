@@ -5,6 +5,60 @@
 <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Data_stack.svg/1280px-Data_stack.svg.png" alt = "Stack image in wikipedia" height = "300" width = "400" />
 <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Data_Queue.svg/1920px-Data_Queue.svg.png" alt = "Queue image in wikipedia" height = "300" width = "400" />  
 또한, 이러한 둘의 특성을 합한 것과 같은 자료구조로, 데크(deque)가 있다. 데크는 양쪽 모두에서 원소를 더하거나 뺄 수 있다.
+### 메소드  
+#### 스택
+<table border="1">
+        <th></th>
+	    <th>Java</th>
+	    <th>Python</th>
+        <th>C++</th>
+	    <tr>
+	        <td>넣기</td>
+	        <td>stack.push(E)</td>
+            <td>stack.push(E)</td>
+            <td>stack.push(E)</td>
+	    </tr>
+	    <tr>
+	        <td>빼기</td>
+	        <td>stack.pop()</td>
+            <td>stack.pop()</td>
+            <td>stack.pop()</td>
+	    </tr>
+        <tr>
+            <td>검사</td>
+            <td>stack.peek()</td>
+            <td>stack.top()</td>
+            <td>stack.top()</td>
+        </tr>
+    </table>  
+    
+#### 큐
+<table border="1">
+        <th></th>
+	    <th>Java</th>
+	    <th>Python</th>
+        <th>C++</th>
+	    <tr>
+	        <td>넣기</td>
+	        <td>queue.offer(E)</td>
+            <td>queue.appendleft(E)</td>
+            <td>queue.push(E)</td>
+	    </tr>
+	    <tr>
+	        <td>빼기</td>
+	        <td>queue.poll()</td>
+            <td>queue.pop()</td>
+            <td>queue.pop()</td>
+	    </tr>
+        <tr>
+            <td>검사</td>
+            <td>queue.peek()</td>
+            <td>?</td>
+            <td>queue.last()</td>
+        </tr>
+    </table>
+  
+
 ### 사용법
 java  
 ```java
@@ -12,15 +66,15 @@ import java.util.Stack;
 import java.util.Queue;
 import java.util.LinkedList;
 ...
-Stack<Integer> stack = new Stack<>();
-Queue<Integer> queue = new LinkedList<>();
+Stack<E> stack = new Stack<>();
+Queue<E> queue = new LinkedList<>();
 ```
 python  
 ```python
 from collections import deque
 ...
 stack = []
-queue = deque([])
+queue = deque()
 # 리스트나 데크 모두 스택/큐로 쓸 수 있으나, 리스트를 큐로 쓰는 것은 속도가 느리다고 한다.
 ```
 C++
@@ -28,8 +82,8 @@ C++
 #include <stack>
 #include <queue>
 ...
-stack<int> s;
-queue<int> q;
+stack<E> s;
+queue<E> q;
 ```
 
 
@@ -38,12 +92,16 @@ queue<int> q;
 https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D  
 https://en.wikipedia.org/wiki/Queue_(abstract_data_type)  
 #### java  
-
+https://www.tutorialspoint.com/java/util/java_util_stack.htm  
+https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html  
 
 #### python  
 deque : https://docs.python.org/ko/3/library/collections.html#collections.deque  
+https://www.geeksforgeeks.org/stack-in-python/  
+https://docs.python.org/ko/3/library/collections.html  
 
 #### C++  
 https://twpower.github.io/75-how-to-use-stack-in-cpp  
 https://twpower.github.io/76-how-to-use-queue-in-cpp  
+https://www.geeksforgeeks.org/stack-in-cpp-stl/  
 
