@@ -1,6 +1,6 @@
 # 스택(Stack)/큐(Queue)란?
 ## 후입선출(Last In First Out), 선입선출(First In First Out)의 자료구조
-스택은 후입선출의 구조를 띄고 있으며, 말그대로 상자에 물건을 넣었다가 뺄 때처럼 나중에 들어간 원소가 먼저 나오는 구조를 가지고 있다.  
+스택은 후입선출의 구조를 띄고 있으며,상자에 물건을 넣었다가 뺄 때처럼 나중에 들어간 원소가 먼저 나오는 구조를 가지고 있다.  
 큐는 선입선출의 구조를 띄고 있으며, 터널에 차가 들어갔다가 나오는 것처럼 먼저 들어간 원소가 먼저 나오는 구조를 가지고 있다.  
 <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Data_stack.svg/1280px-Data_stack.svg.png" alt = "Stack image in wikipedia" height = "300" width = "400" />
 <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Data_Queue.svg/1920px-Data_Queue.svg.png" alt = "Queue image in wikipedia" height = "300" width = "400" />  
