@@ -15,14 +15,14 @@
 	    <tr>
 	        <td>넣기</td>
 	        <td>stack.push(E)</td>
-            <td>stack.push(E)</td>
-            <td>stack.push(E)</td>
+            	<td>stack.push(E)</td>
+            	<td>stack.push(E)</td>
 	    </tr>
 	    <tr>
 	        <td>빼기</td>
 	        <td>stack.pop()</td>
-            <td>stack.pop()</td>
-            <td>stack.pop()</td>
+            	<td>stack.pop()</td>
+            	<td>stack.pop()</td>
 	    </tr>
         <tr>
             <td>검사</td>
@@ -41,20 +41,20 @@
 	    <tr>
 	        <td>넣기</td>
 	        <td>queue.offer(E)</td>
-            <td>queue.appendleft(E)</td>
-            <td>queue.push(E)</td>
+            	<td>queue.appendleft(E)</td>
+            	<td>queue.push(E)</td>
 	    </tr>
 	    <tr>
 	        <td>빼기</td>
 	        <td>queue.poll()</td>
-            <td>queue.pop()</td>
-            <td>queue.pop()</td>
+            	<td>queue.pop()</td>
+            	<td>queue.pop()</td>
 	    </tr>
         <tr>
             <td>검사</td>
             <td>queue.peek()</td>
             <td>?</td>
-            <td>queue.last()</td>
+            <td>queue.front()</td>
         </tr>
     </table>
   
