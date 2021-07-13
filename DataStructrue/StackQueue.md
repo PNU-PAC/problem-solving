@@ -71,8 +71,9 @@ Queue<E> q = new LinkedList<>();
 python  
 ```python
 import queue
+
 #deque를 이용한 방법
-from collection improt queue
+from collection improt deque
 ...
 s = []
 q = queue.Queue()
