@@ -4,7 +4,6 @@
 큐는 선입선출의 구조를 띄고 있으며, 터널에 차가 들어갔다가 나오는 것처럼 먼저 들어간 원소가 먼저 나오는 구조를 가지고 있다.  
 <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Data_stack.svg/1280px-Data_stack.svg.png" alt = "Stack image in wikipedia" height = "300" width = "400" />
 <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Data_Queue.svg/1920px-Data_Queue.svg.png" alt = "Queue image in wikipedia" height = "300" width = "400" />  
-또한, 이러한 둘의 특성을 합한 것과 같은 자료구조로, 데크(deque)가 있다. 데크는 양쪽 모두에서 원소를 더하거나 뺄 수 있다.
 ### 메소드  
 #### 스택
 <table border="1">
@@ -41,19 +40,19 @@
 	    <tr>
 	        <td>넣기</td>
 	        <td>queue.offer(E)</td>
-            	<td>queue.appendleft(E)</td>
+            	<td>queue.put(E)</td>
             	<td>queue.push(E)</td>
 	    </tr>
 	    <tr>
 	        <td>빼기</td>
 	        <td>queue.poll()</td>
-            	<td>queue.pop()</td>
+            	<td>queue.get()</td>
             	<td>queue.pop()</td>
 	    </tr>
         <tr>
             <td>검사</td>
             <td>queue.peek()</td>
-            <td>?</td>
+            <td>queue.queue[0]</td>
             <td>queue.front()</td>
         </tr>
     </table>
@@ -71,11 +70,10 @@ Queue<E> queue = new LinkedList<>();
 ```
 python  
 ```python
-from collections import deque
+import queue
 ...
 stack = []
-queue = deque()
-# 리스트나 데크 모두 스택/큐로 쓸 수 있으나, 리스트를 큐로 쓰는 것은 속도가 느리다고 한다.
+queue = queue.Queue()
 ```
 C++
 ```C++
@@ -99,6 +97,7 @@ https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html
 deque : https://docs.python.org/ko/3/library/collections.html#collections.deque  
 https://www.geeksforgeeks.org/stack-in-python/  
 https://docs.python.org/ko/3/library/collections.html  
+https://stackoverflow.com/questions/53234946/how-to-print-the-element-at-front-of-a-queue-python-3  
 
 #### C++  
 https://twpower.github.io/75-how-to-use-stack-in-cpp  
