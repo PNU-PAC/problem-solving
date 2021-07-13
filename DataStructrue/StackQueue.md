@@ -4,6 +4,9 @@
 큐는 선입선출의 구조를 띄고 있으며, 터널에 차가 들어갔다가 나오는 것처럼 먼저 들어간 원소가 먼저 나오는 구조를 가지고 있다.  
 <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Data_stack.svg/1280px-Data_stack.svg.png" alt = "Stack image in wikipedia" height = "300" width = "400" />
 <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Data_Queue.svg/1920px-Data_Queue.svg.png" alt = "Queue image in wikipedia" height = "300" width = "400" />  
+이 둘을 합한것 처럼 양 쪽에서 추가와 삭제가 가능한 자료구조를 데크(deque; double ended queue)라고 한다.  
+따라서 deque를 불러온다면 어떤 메소드를 쓰냐에 따라서 스택으로도, 큐로도 쓸 수 있다.  
+
 ### 메소드  
 #### 스택
 <table border="1">
@@ -57,6 +60,7 @@
         </tr>
     </table>
   
+C++의 stack.pop()이나 queue.pop()은 void 타입이기 때문에 삭제된 요소를 얻고 싶다면 삭제하기 전에 stack.top(), queue.front()로 미리 값을 얻거나, deque를 이용해야한다.
 
 ### 사용법
 java  
@@ -73,7 +77,7 @@ python
 import queue
 
 #deque를 이용한 방법
-from collection improt deque
+from collection import deque
 ...
 s = []
 q = queue.Queue()
@@ -107,4 +111,5 @@ https://stackoverflow.com/questions/53234946/how-to-print-the-element-at-front-o
 https://twpower.github.io/75-how-to-use-stack-in-cpp  
 https://twpower.github.io/76-how-to-use-queue-in-cpp  
 https://www.geeksforgeeks.org/stack-in-cpp-stl/  
+https://stackoverflow.com/questions/16264017/how-to-access-and-modify-an-element-inside-stdqueue-in-c/16264331  
 
