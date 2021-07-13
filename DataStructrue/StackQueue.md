@@ -82,14 +82,21 @@ from collection import deque
 s = []
 q = queue.Queue()
 q2 = deque()
+#데크를 큐로만 쓰고 싶을 때는 삽입:q2.append() 삭제:q2.popleft() 검사:?
 ```
 C++
 ```C++
 #include <stack>
 #include <queue>
+//deque 이용하기
+#include <deque>
 ...
 stack<E> s;
 queue<E> q;
+
+deque<E> s2;
+deque<E> q2;
+//deque는 q2.pop_front() 처럼 메소드 이름과 스택/큐로 쓸 때 각각 써야하는 메소드가 다르므로 주의!
 ```
 
 
