@@ -65,15 +65,18 @@ import java.util.Stack;
 import java.util.Queue;
 import java.util.LinkedList;
 ...
-Stack<E> stack = new Stack<>();
-Queue<E> queue = new LinkedList<>();
+Stack<E> s = new Stack<>();
+Queue<E> q = new LinkedList<>();
 ```
 python  
 ```python
 import queue
+//deque를 이용한 방법
+from collection improt queue
 ...
-stack = []
-queue = queue.Queue()
+s = []
+q = queue.Queue()
+q2 = deque()
 ```
 C++
 ```C++
