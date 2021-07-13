@@ -95,6 +95,7 @@ queue<E> q;
 
 출처 및 둘러보기
 --  
+영어가 된다면 되도록이면 영어로, 안되면 한글로라도 구글에 검색하세요!  
 https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D  
 https://en.wikipedia.org/wiki/Queue_(abstract_data_type)  
 #### java  
