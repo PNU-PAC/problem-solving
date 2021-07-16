@@ -5,17 +5,18 @@
 
 using namespace std;
 
-int Camouflage(string clothes[30][2])
+int Camouflage(input[30][2])
 {
 	unordered_map<string, int> co;
+	vector<vector<string>> type;
 	int comb=1;
 
 #if 1//_Debug_
-	for(int i=0;i<30;i++)
+	for()
 	{
 		for(int j=0;j<2;j++)
 		{
-			//if(!clothes[i][j]) continue;
+			if() continue;
 			co[clothes[i][j]] = co[clothes[i][j]] + 1;
 		}//j
 	}//i
@@ -23,8 +24,7 @@ int Camouflage(string clothes[30][2])
 
 	for(auto const& element:co)
 	{
-		if(element.second != 0)
-			comb *= element.second+1;
+		comb *= element.second+1;
 	}//element:co
 
 	return comb;
