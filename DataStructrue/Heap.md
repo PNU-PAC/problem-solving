@@ -27,6 +27,10 @@ import java.util.Collections;
 PriorityQueue<E> pqMin = new PriorityQueue<>();
 //최대 힙
 PriorityQueue<E> pqMax = new PriorityQueue<>(Collections.reveseOrder());
+...
+pqMin.add(elem);
+E check = pqMin.peek();
+E pop = pqMin.poll();
 ```
 python  
 ```python
@@ -34,10 +38,14 @@ from queue import PriorityQueue
 ...
 #최소 힙
 pqMin = PriorityQueue()
+pqMax = PriorityQueue()
 #최대 힙 - 파이썬은 최대힙을 만들 수 있는 간단한 방법을 제공하지 않기 때문에 PriorityQueue를 상속받는 클래스를 새로 만들거나,
 #큐에 넣는 값에 -1을 곱해서 처리해야한다.(출처 링크 참조)
-pqMax = PriorityQueue()
 #파이썬의 우선순위 큐는 해시처럼 (key, value) 값으로 저장이 가능하며, 이때는 key 값을 기준으로 정렬된다.(출처 링크 참조)
+...
+pqMin.put(elem)
+E check = pqMin.queue[0]
+E pop = pqMin.get()
 ```
 C++
 ```C++
@@ -47,6 +55,10 @@ C++
 priority_queue<E,vector<E>,greater<E>> pqMin;
 //최대 힙
 priority_queue<E> pqMax
+...
+pqMin.push(elem);
+E check = pqMin.top();
+pqMin.pop();
 ```
 
 
@@ -59,12 +71,15 @@ https://ko.wikipedia.org/wiki/%ED%9E%99_(%EC%9E%90%EB%A3%8C_%EA%B5%AC%EC%A1%B0)
 https://galid1.tistory.com/174  
 
 #### java
+https://docs.oracle.com/javase/7/docs/api/java/util/PriorityQueue.html  
 
 #### python
+https://docs.python.org/ko/3.7/library/queue.html  
 https://www.daleseo.com/python-priority-queue/  
 https://stackoverflow.com/questions/41218860/how-to-use-queue-priorityqueue-as-maxheap-python  
 
 #### C++
+https://en.cppreference.com/w/cpp/container/priority_queue  
 https://twpower.github.io/93-how-to-use-priority_queue-in-cpp  
 
 
