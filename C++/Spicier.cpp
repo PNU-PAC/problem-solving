@@ -29,28 +29,16 @@ int Spicier(vector<int> scoville, int cut)
 	{
 		if(_scoville.top() >= cut) break;
 
-		int min[3];
+		int sum, min[2];
 
-		for(int jj=0;jj<3;jj++)
+		for(int jj=0;jj<2;jj++)
 		{
-			if(!_scoville.empty())
-			{
-				min[jj]=_scoville.top();
-				_scoville.pop();
-			}
+			min[jj]=_scoville.top();
+			_scoville.pop();
 		}//jj loop
 
-		if(min[1] < min[2] )
-		{ 
-			int sum = min[0] + min[1]*2;
-			_scoville.push(min[2]);
-			_scoville.push(sum);
-		}else
-		{
-			int sum = min[0] + min[2]*2;
-			_scoville.push(min[1]);
-			_scoville.push(sum);
-		}
+		sum = min[0] + min[1]*2;
+		_scoville.push(sum);
 
 		nmixing++;
 
